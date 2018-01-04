@@ -78,12 +78,10 @@
 		                        </artifactItem>
 		                    </artifactItems>
 		                    <archive>
-					        	<manifest>
-					            	<addClasspath>true</addClasspath>
-					            	<classpathPrefix>lib/</classpathPrefix>
-					            	<mainClass>com.pp.cookforyou.CookforyouApplication</mainClass>
-					          	</manifest>
-					        </archive>
+								<manifest>
+									<mainClass>com.pp.cookforyou.CookforyouApplication</mainClass>
+								</manifest>
+							</archive>
 		                </configuration>
                     </execution>
                 </executions>
