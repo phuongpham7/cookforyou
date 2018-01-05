@@ -69,6 +69,7 @@
                         <phase>package</phase>
                         <goals><goal>copy-dependencies</goal></goals>
                         <configuration>
+                        	<!-- 
 		                    <artifactItems>
 		                        <artifactItem>
 		                            <groupId>com.github.jsimone</groupId>
@@ -82,6 +83,7 @@
 									<mainClass>com.pp.cookforyou.CookforyouApplication</mainClass>
 								</manifest>
 							</archive>
+							-->
 		                </configuration>
                     </execution>
                 </executions>
