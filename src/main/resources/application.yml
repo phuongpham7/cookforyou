@@ -1,6 +1,6 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://phuongpham:P@ssword!23@ds034677.mlab.com:34677/cookforyou
+      uri: mongodb://phuongpham:P%40ssword!23@ds034677.mlab.com:34677/cookforyou
     rest:
       base-path: /api
