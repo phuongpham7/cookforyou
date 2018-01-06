@@ -5,7 +5,7 @@
 
 	<groupId>com.pp</groupId>
 	<artifactId>cookforyou</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
 
 	<name>cookforyou</name>
@@ -60,83 +60,9 @@
 	<build>
 		<plugins>
 			<plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <configuration>
-                    <archive>
-                        <manifest>
-                            <addClasspath>true</addClasspath>
-                            <mainClass>com.pp.cookforyou.CookforyouApplication</mainClass>
-                            <classpathPrefix>dependency-jars/</classpathPrefix>
-                        </manifest>
-                    </archive>
-                </configuration>
-            </plugin>
-            <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-dependency-plugin</artifactId>
-				<executions>
-  					<execution>
-						<id>copy-dependencies</id>
-						<phase>package</phase>
-						<goals>
-	    					<goal>copy-dependencies</goal>
-						</goals>
-						<configuration>
-		    				<outputDirectory>
-	                        	${project.build.directory}/dependency-jars/
-	                    	</outputDirectory>
-						</configuration>
-    				</execution>
-				</executions>
-  			</plugin>
-	 		<plugin>
-	        	<groupId>org.apache.maven.plugins</groupId>
-	          	<artifactId>maven-surefire-plugin</artifactId>
-	          	<version>2.20.1</version><!--$NO-MVN-MAN-VER$-->
-	          	<configuration>
-					<skipTests>true</skipTests>
-			  	</configuration>
-	        </plugin>
-		</plugins>
-	</build>
-	<!-- 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                	<execution>
-	                    <goals>
-	                       <goal>repackage</goal>
-	                    </goals>
-	                </execution> 
-                	<execution>
-                        <id>copy-dependencies</id>
-                        <phase>package</phase>
-                        <goals>
-                        	<goal>repackage</goal>
-                        </goals>
-                        <configuration>
-		                    <artifactItems>
-		                        <artifactItem>
-		                            <groupId>com.github.jsimone</groupId>
-		                            <artifactId>webapp-runner</artifactId>
-		                            <version>8.5.23.1</version>
-		                            <destFileName>webapp-runner.jar</destFileName>
-		                        </artifactItem>
-		                    </artifactItems>
-		                    <archive>
-								<manifest>
-									<mainClass>com.pp.cookforyou.CookforyouApplication</mainClass>
-								</manifest>
-							</archive>
-		                </configuration>
-                    </execution>
-                </executions>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-	</build>
-	-->
+	</build>	
 </project>
