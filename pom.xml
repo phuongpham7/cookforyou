@@ -64,10 +64,17 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                 	<execution>
+	                    <goals>
+	                       <goal>repackage</goal>
+	                    </goals>
+	                </execution> 
+                	<!--
+                	<execution>
                         <id>copy-dependencies</id>
                         <phase>package</phase>
-                        <goals><goal>copy-dependencies</goal></goals>
-                        <!--
+                        <goals>
+                        	<goal>repackage</goal>
+                        </goals>
                         <configuration>
 		                    <artifactItems>
 		                        <artifactItem>
@@ -83,8 +90,8 @@
 								</manifest>
 							</archive>
 		                </configuration>
-		                 -->
                     </execution>
+                    -->
                 </executions>
 			</plugin>
 		</plugins>
